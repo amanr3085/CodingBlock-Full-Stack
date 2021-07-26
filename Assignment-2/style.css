@@ -1,0 +1,83 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to top right,rgb(232, 232, 236), rgb(29, 132, 150)  );
+}
+.heading{
+    background-image: linear-gradient(to top right,rgb(238, 244, 245), rgb(101, 225, 247)  );
+    padding-top: 15px;
+    display: inline-block;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.heading h1{
+    font-family: 'Otomanopee One', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    line-height: 1;
+    text-shadow:4px 2px rgb(153, 149, 149);
+}
+.heading h1::before{
+    content: "📱";
+}
+#contact{
+    background-image: linear-gradient(to top right,rgb(232, 232, 236), rgb(23, 99, 112)  );
+    border-radius: 15px;
+    height: auto;
+    width: 50vw;
+    background-color: rgb(250, 248, 244);
+    position: relative;
+}
+
+.listhead{
+    background-color: rgb(25, 132, 175);
+    opacity: 0.8;
+    /* border: 2px solid black; */
+    border-radius: 15px;
+    display: inline-block;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    top: 0px;
+    position: sticky;
+}
+li{
+    list-style: none;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+li:hover{
+    box-shadow: 0px 0px 8px 6px rgb(153, 149, 149);
+}
+li:nth-child(odd) {
+    background-color: aqua;
+}
+li:nth-child(even) {
+    background-color: cadetblue;
+}
+.list-item li{
+    margin: 10px 25px;
+}
+li::before{
+    content: "\260E";
+    margin-right: 8px;
+}
+.footer{
+    background-image: linear-gradient(to top right,rgb(238, 244, 245), rgb(101, 225, 247)  );
+    padding-top: 15px;
+    display: inline-block;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 25px;
+}
