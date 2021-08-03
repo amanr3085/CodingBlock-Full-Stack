@@ -1,0 +1,300 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Bebas Neue', cursive;
+    
+}
+/* Navbar */
+nav {
+    height: 80px;
+    display: flex;
+    background-color: rgb(77, 109, 139);
+    color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 0px 100px;
+}
+
+#click {
+    display: none;
+}
+
+nav .menu-btn i {
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+nav .logo {
+    font-size: 33px;
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0px 5px;
+}
+
+nav ul li a {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 5px;
+    transition: all 0.3 ease;
+}
+
+nav ul li a:hover {
+    background: white;
+    color: rgb(19, 139, 219);
+}
+
+
+/* Media queries for navbar*/
+
+@media screen and (max-width:750px) {
+    nav .menu-btn i {
+        font-size: 25px;
+        cursor: pointer;
+        display: block;
+    }
+    nav .logo {
+        font-size: 22px;
+        font-weight: 600;
+    }
+    nav ul {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background: rgb(87, 111, 163);
+        height: 100vh;
+        width: 100%;
+        display: block;
+        transition: all 0.3 ease;
+        text-align: center;
+    }
+    #click:checked~ul {
+        left: 0%;
+    }
+    #click:checked~.menu-btn i:before {
+        content: "\e9b8";
+    }
+    nav ul li {
+        margin: 40px 0;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    nav ul li a:hover {
+        background: none;
+        color: cyan;
+        border: 1px ;
+    }
+}
+
+@media screen and (max-width:890px) {
+    nav .logo {
+        font-size: 22px;
+        font-weight: 600;
+    }
+    nav .menu-btn i {
+        font-size: 18px;
+    }
+    nav ul li a {
+        font-size: 18px;
+    }
+    nav ul li {
+        margin: 30px 0;
+    }
+    nav ul li a {
+        letter-spacing: 1px;
+        padding: 6px 8px;
+        border-radius: 4px;
+    }
+}
+
+/* Navbar End Here*/
+
+/* SlideShow */
+.slideshow{
+    overflow: hidden;
+    margin: 50px auto;
+    box-shadow:5px 5px 8px gray;
+    width: 70vw;
+    height: 70vh;
+}
+
+.wrapper{
+    /* height: 100%; */
+    width: calc(70vw*6);
+    animation: 18s ease-in 1s infinite changeimage;
+}
+.slide{
+    float: left;
+}
+.slide img{
+    height: 700px;
+    width: 70vw;
+}
+@keyframes changeimage {
+    16%{
+        margin-left: 0px;
+    }
+    32%{
+        margin-left: calc(-70vw*1);
+    }
+    48%{
+        margin-left: calc(-70vw*2);
+    }
+    64%{
+        margin-left:calc(-70vw*3);
+    }
+    80%{
+        margin-left: calc(-70vw*4);
+    }
+    96%{
+        margin-left: calc(-70vw*5);
+    }
+}
+/* Slideshow End Here */
+
+/* Cards */
+#card{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80vw;
+    margin: 30px auto;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+h1{
+    text-align: center;
+}
+
+figure{
+    width: 340px;
+    border: 2px solid rgb(218, 210, 210);
+    margin: 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 0px 8px gray;
+}
+figure:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+figure img{
+    border-radius: 15px;
+    height: 250px;
+    width: 100%;
+}
+figcaption button{
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 15px;
+    border: 1px solid #eee;
+    background: none;
+}
+figcaption button:hover{
+    cursor: pointer;
+    background-color: lightslategray;
+    color: azure;
+}
+/* Cards End Here */
+
+    
+/* Contact */
+
+#contact{
+    background-image: linear-gradient(to top right,rgb(65, 65, 182), rgb(24, 24, 44)  );
+    padding-top: 25px;
+}
+#contact span{
+    color: white;
+}
+#contact-container{
+    display: flex;
+}
+#contact-form-container{
+    width: 50%;
+}
+#contact-form{
+    margin-left: 20%;
+}
+#contact-form input , textarea{
+    max-width: 90%;
+    margin: 15px;
+    padding: 4px 10px;
+    border: 0px solid transparent;
+    border-bottom: 2px solid white;
+    color: #d9dcdd;
+    background: transparent;
+    width: 90%;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+#contact-form button[type="submit"]{
+    background: transparent;
+    font-size: .95rem;
+    border: 2px solid white;
+    margin-top: 5%;
+    margin-left: 35%;
+    margin-bottom: 10%;
+    border-radius: 2px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: .05rem;
+    line-height: 1;
+    padding: 1em;
+}
+#contact-form button:hover{
+    background: white;
+    color: #2857a4;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+#contact-detail{
+    width: 35%;
+    margin-left: 6%;
+    padding: 35px;
+}
+#contact-detail h3{
+    color: white;
+    font-size: 1.2rem;
+}
+#contact-detail p{
+    color: white;
+    font-size: 0.9rem;
+}
+.contact-details-info {
+    margin-bottom: 20px;
+    color: #d9dcdd;
+    font-size: 1rem;
+}
+
+.contact-details-info span {
+    margin-left: 0.4rem;
+}
+/* Contact End Here */
+
+/* Media Query */
+
+@media screen and (max-width:8900px){
+    #contact-form{
+        margin: 5px;
+    }
+}
