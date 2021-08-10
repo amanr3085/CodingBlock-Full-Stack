@@ -1,0 +1,31 @@
+div{
+    border-radius: 15%;
+}
+.img-thumbnail{
+    margin-left: 1.5vw;
+    border-radius: 15%;
+}
+#about{
+    background-image: url('Images/about.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#about>h1,p{
+    padding-left: 45%;
+}
+#project{
+    background-image: url('Images/Project.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#project h1{
+    margin-left: 25vw;
+}
+.accordion-item{
+    margin-left: 25vw;
+}
+#language{
+    background-image: url('Images/code.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
