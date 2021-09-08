@@ -2,7 +2,7 @@
 // api.openweathermap.org/data/2.5/weather?q={city name}&APPID={API key}
 const weatherApi={
     key:"e3ce5b0685c0a50afe6e9276acffc5d6",
-    url:"http://api.openweathermap.org/data/2.5/weather?"
+    url:"https://api.openweathermap.org/data/2.5/weather?"
 }
 
 const inp=document.getElementById('inp-box');
